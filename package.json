@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "launch": "next build && next start",
+    "test": "jest --env=jsdom",
+    "test:watch": "jest --watch --env=jsdom"
   },
   "dependencies": {
     "next": "11.0.0",

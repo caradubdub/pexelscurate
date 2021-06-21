@@ -1,34 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Welcome! This is Pexels CurateApp, a curated photo app leveraging the Pexels API.
+This app uses NextJS for rapid server-side rendered interfaces, and doesn't have many dependencies apart from styled-components used for styling, React, and fontawesome icons libraries.
 
 ## Getting Started
 
-First, run the development server:
+First install dependencies:
+
+```bash
+npm install
+```
+
+You can run the development server with:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+...and open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+To create an optimized production build, run:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```bash
+npm run build
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+To start, run:
 
-## Learn More
+```bash
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
+To build and launch the on the local server in one step, run:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run launch
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Justification
 
-## Deploy on Vercel
+Some justifications for the development choices I made:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+-**NextJS**: I chose NextJS as the project brief required server side rendering and excellent app responsiveness and NextJS provides this "out of the box" allowing me to build quickly according to the specifications. While NextJS may have limitations for scalability, it definitely fit the bill for this project.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+-**styled-components**: I used styled-components as it's my preferred way to spin up modular components styled with CSS. It's an easy way to use CSS in JavaScript with greater readability, and doesn't limit creativity (if I had the time to employ some for this project!)
+
+## If I had more time...
+
+There would be a few features I would implement if I had more time:
+
+-Improve styling and the appearances of the images
+-Add [https://typicode.github.io/husky/#/](husky) and leverage pre-commit hooks to format and test code before each commit.
