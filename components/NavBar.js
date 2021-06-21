@@ -61,10 +61,10 @@ const StyledButton = styled.button`
 
 export default function NavBar(props) {
   return (
-    <TopBar>
+    <TopBar className=".navbar">
       <TitleText>Pexels CurateApp</TitleText>
       <StyledFormWrapper>
-        <form onSubmit={props.handleSubmit}>
+        <form className="form" onSubmit={props.handleSubmit}>
           <StyledInput
             onChange={(e) => {
               props.setQuery(e.target.value);
@@ -72,8 +72,11 @@ export default function NavBar(props) {
             type="text"
             placeholder="Find photos of..."
             value={props.query}
+            className="input"
           ></StyledInput>
-          <StyledButton type="submit">Search</StyledButton>
+          <StyledButton className="button" type="submit">
+            Search
+          </StyledButton>
         </form>
       </StyledFormWrapper>
     </TopBar>

@@ -14,7 +14,7 @@ const Wrapper = styled.div`
 
 export default function Thumbnail(props) {
   return (
-    <Wrapper>
+    <Wrapper className="thumbnail">
       <Image
         width={300}
         height={300}
@@ -24,7 +24,7 @@ export default function Thumbnail(props) {
         id={props.image.id}
       />
       {props.showPopup && props.selected == props.image.id ? (
-        <div>
+        <div className="popup">
           Photographer: {props.image.photographer}
           <br />
           <a href={props.image.url}>View Source</a>

@@ -9,6 +9,14 @@ First install dependencies:
 npm install
 ```
 
+Get a pexels API key:
+This will be required to get info from the Pexels API.
+Follow instructions to sign up [https://www.pexels.com/onboarding](here) and copy your API key. Create a file at the root level called .env.local and add the api key like so:
+
+```javascript
+NEXT_PUBLIC_PEXELS = "your key in string here";
+```
+
 You can run the development server with:
 
 ```bash
@@ -49,3 +57,4 @@ There would be a few features I would implement if I had more time:
 
 -Improve styling and the appearances of the images
 -Add [https://typicode.github.io/husky/#/](husky) and leverage pre-commit hooks to format and test code before each commit.
+-Add more tests for greater coverage, especially data received from API and every prop.

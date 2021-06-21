@@ -98,9 +98,10 @@ export default function Home({ data }) {
       </Head>
       <Wrapper>
         <NavBar query={query} setQuery={setQuery} handleSubmit={handleSubmit} />
-        <ThumbNailSection>
+        <ThumbNailSection className="tnsection">
           {curated.map((image) => (
             <Thumbnail
+              className="thumbnail"
               key={image.id}
               showPopup={showPopup}
               selected={selected}

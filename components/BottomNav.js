@@ -13,14 +13,16 @@ const PageRow = styled.span`
 
 export default function BottomNav(props) {
   return (
-    <PageRow>
+    <PageRow className="row">
       <FontAwesomeIcon
+        className="back"
         style={{ cursor: "pointer" }}
         onClick={props.handleBack}
         icon={faArrowLeft}
       />
       {props.page}
       <FontAwesomeIcon
+        className="forward"
         style={{ cursor: "pointer" }}
         onClick={props.handleForward}
         icon={faArrowRight}
