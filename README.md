@@ -1,5 +1,5 @@
 Welcome! This is Pexels CurateApp, a curated photo app leveraging the Pexels API.
-This app uses NextJS for rapid server-side rendered interfaces, and doesn't have many dependencies apart from styled-components used for styling, React, and fontawesome icons libraries.
+This app uses NextJS for rapid server-side rendered interfaces, and doesn't have many dependencies apart from styled-components used for styling, React, Jest, Enzyme, and fontawesome icons libraries.
 
 ## Getting Started
 
